@@ -17,13 +17,13 @@ typedef NS_ENUM(NSInteger, MDKLocationKeepType) {
 	MDKLocationKeepTypeOnlyOnce        =1,
 };
 
-typedef void(^MDKLocationActionBlock)(CLLocation*location);
+typedef void(^MDKLocationActionBlock)(CLLocation* _Nonnull location);
 
 
 @interface MDKLocationManager : NSObject
 ///action(CLLocation)
-+ (void)addTarget:(nullable id)target action:(SEL)action forType:(MDKLocationKeepType)type;
-+ (void)addActionBlock:(MDKLocationActionBlock)action forType:(MDKLocationKeepType)type;
++ (void)addTarget:(nullable id)target action:(SEL _Nonnull )action forType:(MDKLocationKeepType)type;
++ (void)addActionBlock:(MDKLocationActionBlock _Nullable )action forType:(MDKLocationKeepType)type;
 + (void)startWithDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
 + (void)stop;
 + (void)requestAlwaysAuthorizationAndBackgroundUpdates:(BOOL)allowsBackgroundLocationUpdates;

@@ -13,7 +13,7 @@
 
 NSString * const MDKLocationManagerNeverShowAlert = @"BCLocationManagerNeverShowAlert";
 
-typedef NSDictionary<id(^)(void) , SEL(^)()> MDKLocTargetActDic;
+typedef NSDictionary<id(^)(void) , SEL(^)(void)> MDKLocTargetActDic;
 typedef NSMutableSet<MDKLocTargetActDic*> MDKLocTargetActSet;
 
 @interface MDKLocationManager()<CLLocationManagerDelegate>
@@ -100,33 +100,7 @@ typedef NSMutableSet<MDKLocTargetActDic*> MDKLocTargetActSet;
 	}];
 	return count;
 }
-+ (void)locationServicesDisableMsg{
 
-	[self showSettingMsg:@"请打开手机的定位功能"];
-}
-+ (void)showDeniedMsg{
-	[self showSettingMsg:@"请打开定位权限"];
-}
-+ (void)showSettingMsg:(NSString *)msg{
-
-	if ([NSUserDefaults.standardUserDefaults boolForKey:MDKLocationManagerNeverShowAlert]) { return; }
-
-	UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"定位失败" message:msg preferredStyle:UIAlertControllerStyleAlert];
-	UIAlertAction *confirmAct = [UIAlertAction actionWithTitle:@"到设置去打开" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-		[MDKTenOpenTool openLocation];
-	}];
-	[alertVC addAction:confirmAct];
-	
-	UIAlertAction *cancelAct = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
-	[alertVC addAction:cancelAct];
-
-	UIAlertAction *neverShowAct = [UIAlertAction actionWithTitle:@"不再提示定位问题" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-		[NSUserDefaults.standardUserDefaults setBool:YES forKey:MDKLocationManagerNeverShowAlert];
-	}];
-	[alertVC addAction:neverShowAct];
-	
-	[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertVC animated:YES completion:nil];
-}
 + (void)stop{
 	[self.share.locManager stopUpdatingLocation];
 }
@@ -174,6 +148,44 @@ typedef NSMutableSet<MDKLocTargetActDic*> MDKLocTargetActSet;
 
 	[set addObject:newDIc];
 }
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+	if (!_type_targetActionDic[@(MDKLocationKeepTypeAllways)].count) {
+		[self.class stop];
+	}
+	_currentLocation = locations.lastObject;
+
+	[_type_targetActionDic enumerateKeysAndObjectsUsingBlock:^(NSNumber *key, MDKLocTargetActSet *set, BOOL * stop) {
+		MDKLocationKeepType type = key.integerValue;
+		[set enumerateObjectsUsingBlock:^(NSDictionary<id (^)(void),SEL (^)(void)> *dic, BOOL *stop) {
+			[dic enumerateKeysAndObjectsUsingBlock:^(id(^target)(void) , SEL(^action)(void), BOOL *stop) {
+				if (!target()) {
+					[set removeObject:dic];
+					return ;
+				}
+				if ([target() isKindOfClass:[self class]]) {
+					MDKLocationActionBlock actionBlock = (id)action;
+					actionBlock(_currentLocation);
+				}else{
+					[self notiTarget:target() runAction:action()];
+				}
+			}];
+		}];
+		
+		switch (type) {
+			case MDKLocationKeepTypeOnlyOnce:
+				[set removeAllObjects];
+				break;
+			default: break;
+		}
+	}];
+}
+- (void)notiTarget:(nullable id)target runAction:(SEL)action{
+	if ([target respondsToSelector:action]) {
+		[target performSelector:action withObject:_currentLocation];
+	}
+}
+
 + (void)removeTarget:(nullable id)target action:(SEL)action{
 	if (!target) { return; }
 	[self.share.type_targetActionDic enumerateKeysAndObjectsUsingBlock:^(NSNumber *key, NSMutableSet<NSDictionary<id (^)(void),SEL (^)(void)> *> *set, BOOL *stop1) {
@@ -192,33 +204,35 @@ typedef NSMutableSet<MDKLocTargetActDic*> MDKLocTargetActSet;
 		}];
 	}];
 }
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
-	if (!_type_targetActionDic[@(MDKLocationKeepTypeAllways)].count) {
-		[self.class stop];
-	}
-	_currentLocation = locations.lastObject;
 
-	[_type_targetActionDic enumerateKeysAndObjectsUsingBlock:^(NSNumber *key, MDKLocTargetActSet *set, BOOL * stop) {
-		MDKLocationKeepType type = key.integerValue;
-		[set enumerateObjectsUsingBlock:^(NSDictionary<id (^)(void),SEL (^)(void)> *dic, BOOL *stop) {
-			[dic enumerateKeysAndObjectsUsingBlock:^(id(^target)(void) , SEL(^action)(void), BOOL *stop) {
-				if ([target() isKindOfClass:[self class]]) {
-					MDKLocationActionBlock actionBlock = (id)action;
-					actionBlock(_currentLocation);
-				}else{
-					[self notiTarget:target() runAction:action()];
-				}
-			}];
-		}];
-		
-		switch (type) {
-			case MDKLocationKeepTypeOnlyOnce:
-				[set removeAllObjects];
-				break;
-			default: break;
-		}
-	}];
++ (void)locationServicesDisableMsg{
+
+	[self showSettingMsg:@"请打开手机的定位功能"];
 }
++ (void)showDeniedMsg{
+	[self showSettingMsg:@"请打开定位权限"];
+}
++ (void)showSettingMsg:(NSString *)msg{
+
+	if ([NSUserDefaults.standardUserDefaults boolForKey:MDKLocationManagerNeverShowAlert]) { return; }
+
+	UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"定位失败" message:msg preferredStyle:UIAlertControllerStyleAlert];
+	UIAlertAction *confirmAct = [UIAlertAction actionWithTitle:@"到设置去打开" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+		[MDKTenOpenTool openLocation];
+	}];
+	[alertVC addAction:confirmAct];
+
+	UIAlertAction *cancelAct = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {}];
+	[alertVC addAction:cancelAct];
+
+	UIAlertAction *neverShowAct = [UIAlertAction actionWithTitle:@"不再提示定位问题" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+		[NSUserDefaults.standardUserDefaults setBool:YES forKey:MDKLocationManagerNeverShowAlert];
+	}];
+	[alertVC addAction:neverShowAct];
+
+	[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertVC animated:YES completion:nil];
+}
+
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
 	[self handelError:error FromlocationManager:manager];
 }
@@ -239,12 +253,6 @@ typedef NSMutableSet<MDKLocTargetActDic*> MDKLocTargetActSet;
 }
 
 
-
-- (void)notiTarget:(nullable id)target runAction:(SEL)action{
-	if ([target respondsToSelector:action]) {
-		[target performSelector:action withObject:_currentLocation];
-	}
-}
 #ifdef canUseBaiduSDK
 //MARK:	以下代码来自http://blog.csdn.net/jiisd/article/details/48712473
 /// 将原始GPS坐标转换为百度坐标

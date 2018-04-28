@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MDKLocationManager"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "a easy way location manager with block or target action mode"
 
   # This description is used to generate tags and improve search results.
