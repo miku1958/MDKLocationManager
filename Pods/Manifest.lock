@@ -1,0 +1,16 @@
+PODS:
+  - MDKTenOpenTool (1.0.0)
+
+DEPENDENCIES:
+  - MDKTenOpenTool
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MDKTenOpenTool
+
+SPEC CHECKSUMS:
+  MDKTenOpenTool: ef69033641849876f735b2edcf9b4f18752db29b
+
+PODFILE CHECKSUM: 68e3430042014eb14c8af3838e3ee11209cb69ac
+
+COCOAPODS: 1.5.0

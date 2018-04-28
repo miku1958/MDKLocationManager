@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033A6A22EF038443B700AC2C /* libPods-MDKLocationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C07967EF61322A7F6A05CB /* libPods-MDKLocationManager.a */; };
+		FFDE3A1C20943F3500F21282 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE3A1B20943F3500F21282 /* AppDelegate.m */; };
+		FFDE3A1F20943F3500F21282 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE3A1E20943F3500F21282 /* ViewController.m */; };
+		FFDE3A2220943F3500F21282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDE3A2020943F3500F21282 /* Main.storyboard */; };
+		FFDE3A2420943F3500F21282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDE3A2320943F3500F21282 /* Assets.xcassets */; };
+		FFDE3A2720943F3500F21282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDE3A2520943F3500F21282 /* LaunchScreen.storyboard */; };
+		FFDE3A2A20943F3500F21282 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE3A2920943F3500F21282 /* main.m */; };
+		FFDE3A3320943F5200F21282 /* MDKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE3A3220943F5200F21282 /* MDKLocationManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000E4AF54BA61DD143C5D55E /* Pods-MDKLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDKLocationManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDKLocationManager/Pods-MDKLocationManager.debug.xcconfig"; sourceTree = "<group>"; };
+		06B04F3C16032C5BB6D57B18 /* Pods-MDKLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDKLocationManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDKLocationManager/Pods-MDKLocationManager.release.xcconfig"; sourceTree = "<group>"; };
+		F1C07967EF61322A7F6A05CB /* libPods-MDKLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDKLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDE3A1720943F3500F21282 /* MDKLocationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDKLocationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDE3A1A20943F3500F21282 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFDE3A1B20943F3500F21282 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFDE3A1D20943F3500F21282 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFDE3A1E20943F3500F21282 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFDE3A2120943F3500F21282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFDE3A2320943F3500F21282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFDE3A2620943F3500F21282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFDE3A2820943F3500F21282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDE3A2920943F3500F21282 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFDE3A3120943F5200F21282 /* MDKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDKLocationManager.h; sourceTree = "<group>"; };
+		FFDE3A3220943F5200F21282 /* MDKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDKLocationManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFDE3A1420943F3500F21282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A6A22EF038443B700AC2C /* libPods-MDKLocationManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0C589F7F0F1B27C646684A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1C07967EF61322A7F6A05CB /* libPods-MDKLocationManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2DFA249D4E8D59D0D0E84CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				000E4AF54BA61DD143C5D55E /* Pods-MDKLocationManager.debug.xcconfig */,
+				06B04F3C16032C5BB6D57B18 /* Pods-MDKLocationManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFDE3A0E20943F3500F21282 = {
+			isa = PBXGroup;
+			children = (
+				FFDE3A3020943F5200F21282 /* Class */,
+				FFDE3A1920943F3500F21282 /* MDKLocationManager */,
+				FFDE3A1820943F3500F21282 /* Products */,
+				D2DFA249D4E8D59D0D0E84CF /* Pods */,
+				C0C589F7F0F1B27C646684A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFDE3A1820943F3500F21282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFDE3A1720943F3500F21282 /* MDKLocationManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFDE3A1920943F3500F21282 /* MDKLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				FFDE3A1A20943F3500F21282 /* AppDelegate.h */,
+				FFDE3A1B20943F3500F21282 /* AppDelegate.m */,
+				FFDE3A1D20943F3500F21282 /* ViewController.h */,
+				FFDE3A1E20943F3500F21282 /* ViewController.m */,
+				FFDE3A2020943F3500F21282 /* Main.storyboard */,
+				FFDE3A2320943F3500F21282 /* Assets.xcassets */,
+				FFDE3A2520943F3500F21282 /* LaunchScreen.storyboard */,
+				FFDE3A2820943F3500F21282 /* Info.plist */,
+				FFDE3A2920943F3500F21282 /* main.m */,
+			);
+			path = MDKLocationManager;
+			sourceTree = "<group>";
+		};
+		FFDE3A3020943F5200F21282 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FFDE3A3120943F5200F21282 /* MDKLocationManager.h */,
+				FFDE3A3220943F5200F21282 /* MDKLocationManager.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFDE3A1620943F3500F21282 /* MDKLocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDE3A2D20943F3500F21282 /* Build configuration list for PBXNativeTarget "MDKLocationManager" */;
+			buildPhases = (
+				92DCD4C61365B40934BD26C4 /* [CP] Check Pods Manifest.lock */,
+				FFDE3A1320943F3500F21282 /* Sources */,
+				FFDE3A1420943F3500F21282 /* Frameworks */,
+				FFDE3A1520943F3500F21282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDKLocationManager;
+			productName = MDKLocationManager;
+			productReference = FFDE3A1720943F3500F21282 /* MDKLocationManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFDE3A0F20943F3500F21282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = mdk;
+				TargetAttributes = {
+					FFDE3A1620943F3500F21282 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFDE3A1220943F3500F21282 /* Build configuration list for PBXProject "MDKLocationManager" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFDE3A0E20943F3500F21282;
+			productRefGroup = FFDE3A1820943F3500F21282 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFDE3A1620943F3500F21282 /* MDKLocationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFDE3A1520943F3500F21282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDE3A2720943F3500F21282 /* LaunchScreen.storyboard in Resources */,
+				FFDE3A2420943F3500F21282 /* Assets.xcassets in Resources */,
+				FFDE3A2220943F3500F21282 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92DCD4C61365B40934BD26C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDKLocationManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFDE3A1320943F3500F21282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDE3A1F20943F3500F21282 /* ViewController.m in Sources */,
+				FFDE3A2A20943F3500F21282 /* main.m in Sources */,
+				FFDE3A1C20943F3500F21282 /* AppDelegate.m in Sources */,
+				FFDE3A3320943F5200F21282 /* MDKLocationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFDE3A2020943F3500F21282 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFDE3A2120943F3500F21282 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFDE3A2520943F3500F21282 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFDE3A2620943F3500F21282 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFDE3A2B20943F3500F21282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFDE3A2C20943F3500F21282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFDE3A2E20943F3500F21282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000E4AF54BA61DD143C5D55E /* Pods-MDKLocationManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AP6XM8L72;
+				INFOPLIST_FILE = MDKLocationManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mdk.MDKLocationManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFDE3A2F20943F3500F21282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B04F3C16032C5BB6D57B18 /* Pods-MDKLocationManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AP6XM8L72;
+				INFOPLIST_FILE = MDKLocationManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mdk.MDKLocationManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFDE3A1220943F3500F21282 /* Build configuration list for PBXProject "MDKLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDE3A2B20943F3500F21282 /* Debug */,
+				FFDE3A2C20943F3500F21282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDE3A2D20943F3500F21282 /* Build configuration list for PBXNativeTarget "MDKLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDE3A2E20943F3500F21282 /* Debug */,
+				FFDE3A2F20943F3500F21282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFDE3A0F20943F3500F21282 /* Project object */;
+}

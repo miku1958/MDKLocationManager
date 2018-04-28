@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79CB57E023A7F3123E1842198D9307AD /* MDKTenOpenTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4B5DE957157C49D4E51FF8B7458E0 /* MDKTenOpenTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		816E8CD2F5DBE4E8160273D66BCEA63D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		83CDFB4FAE47B9BC10EA6126C00D1243 /* MDKTenOpenTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2193768D28C780FA4C447238F6E83104 /* MDKTenOpenTool.m */; };
+		D327226C831B49F32EAF19514F32E539 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D772359CE6FEB3324F0B3D5B1390CF5C /* Pods-MDKLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A50E450FD254AF5E67955B9E29AB5E /* Pods-MDKLocationManager-dummy.m */; };
+		F973C5FBBF09281CC81CCB4A819F82AE /* MDKTenOpenTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D282B2752ED292CE1D919320AC871F /* MDKTenOpenTool-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1556A3B33FF0C789013CA7C5625CF6DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8426E0CFB6DAB862A59B7891A42750E;
+			remoteInfo = MDKTenOpenTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E4B5DE957157C49D4E51FF8B7458E0 /* MDKTenOpenTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDKTenOpenTool.h; path = Class/MDKTenOpenTool.h; sourceTree = "<group>"; };
+		20A50E450FD254AF5E67955B9E29AB5E /* Pods-MDKLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDKLocationManager-dummy.m"; sourceTree = "<group>"; };
+		2193768D28C780FA4C447238F6E83104 /* MDKTenOpenTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDKTenOpenTool.m; path = Class/MDKTenOpenTool.m; sourceTree = "<group>"; };
+		31203C66EC35490BAC00ED80E7D9B9DF /* Pods-MDKLocationManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MDKLocationManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DF901E2B3372FD5E7D2040480B42806 /* Pods-MDKLocationManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MDKLocationManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		43FF6302A75EABC4EFC4637F9545D21F /* MDKTenOpenTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDKTenOpenTool-prefix.pch"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F2FBB09A88AD703BA87243E83099474 /* Pods-MDKLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDKLocationManager.release.xcconfig"; sourceTree = "<group>"; };
+		733790AA2302628C81E9FC3DF5344F9A /* MDKTenOpenTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDKTenOpenTool.xcconfig; sourceTree = "<group>"; };
+		74ECD1E242646F61FF00871F77A3D86C /* Pods-MDKLocationManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MDKLocationManager-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C087A81C1B48A3C6D4A715DF4B0C06CC /* libMDKTenOpenTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMDKTenOpenTool.a; path = libMDKTenOpenTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C35D253C5057D8D49DFABB0FC6092D /* Pods-MDKLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDKLocationManager.debug.xcconfig"; sourceTree = "<group>"; };
+		D9D282B2752ED292CE1D919320AC871F /* MDKTenOpenTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDKTenOpenTool-dummy.m"; sourceTree = "<group>"; };
+		DB5F65B4C2D112E1EFB6396B50289767 /* Pods-MDKLocationManager-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MDKLocationManager-frameworks.sh"; sourceTree = "<group>"; };
+		E944C36153F722CED52DF022D798A9ED /* libPods-MDKLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MDKLocationManager.a"; path = "libPods-MDKLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D819488977352B532C2624A3035B47E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D327226C831B49F32EAF19514F32E539 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42CDD843CD1178B3D115027EB95B712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816E8CD2F5DBE4E8160273D66BCEA63D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10722DAC4679183E58540204B3533DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C087A81C1B48A3C6D4A715DF4B0C06CC /* libMDKTenOpenTool.a */,
+				E944C36153F722CED52DF022D798A9ED /* libPods-MDKLocationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A6F77AA152A25A37738FA659363A2A9 /* MDKTenOpenTool */ = {
+			isa = PBXGroup;
+			children = (
+				05E4B5DE957157C49D4E51FF8B7458E0 /* MDKTenOpenTool.h */,
+				2193768D28C780FA4C447238F6E83104 /* MDKTenOpenTool.m */,
+				80255B2A40D08BC9E9EF948569979110 /* Support Files */,
+			);
+			name = MDKTenOpenTool;
+			path = MDKTenOpenTool;
+			sourceTree = "<group>";
+		};
+		5E6A0BF0FC77B94C24DBDCCFCCA20A07 /* Pods-MDKLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				31203C66EC35490BAC00ED80E7D9B9DF /* Pods-MDKLocationManager-acknowledgements.markdown */,
+				3DF901E2B3372FD5E7D2040480B42806 /* Pods-MDKLocationManager-acknowledgements.plist */,
+				20A50E450FD254AF5E67955B9E29AB5E /* Pods-MDKLocationManager-dummy.m */,
+				DB5F65B4C2D112E1EFB6396B50289767 /* Pods-MDKLocationManager-frameworks.sh */,
+				74ECD1E242646F61FF00871F77A3D86C /* Pods-MDKLocationManager-resources.sh */,
+				C1C35D253C5057D8D49DFABB0FC6092D /* Pods-MDKLocationManager.debug.xcconfig */,
+				6F2FBB09A88AD703BA87243E83099474 /* Pods-MDKLocationManager.release.xcconfig */,
+			);
+			name = "Pods-MDKLocationManager";
+			path = "Target Support Files/Pods-MDKLocationManager";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BFDDEB8B10C75AFFE2910A83788DF834 /* Pods */,
+				10722DAC4679183E58540204B3533DAE /* Products */,
+				DDE329AF397B2DD32870F5B0F5F482C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80255B2A40D08BC9E9EF948569979110 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				733790AA2302628C81E9FC3DF5344F9A /* MDKTenOpenTool.xcconfig */,
+				D9D282B2752ED292CE1D919320AC871F /* MDKTenOpenTool-dummy.m */,
+				43FF6302A75EABC4EFC4637F9545D21F /* MDKTenOpenTool-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MDKTenOpenTool";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFDDEB8B10C75AFFE2910A83788DF834 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A6F77AA152A25A37738FA659363A2A9 /* MDKTenOpenTool */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DDE329AF397B2DD32870F5B0F5F482C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E6A0BF0FC77B94C24DBDCCFCCA20A07 /* Pods-MDKLocationManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB3F505C125188D13E9D30D4CFE74D5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CB57E023A7F3123E1842198D9307AD /* MDKTenOpenTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5EFB87BF0855FFFB367BDFF5E41F54B8 /* Pods-MDKLocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F8E555A0C22482580071FF5D8DC815 /* Build configuration list for PBXNativeTarget "Pods-MDKLocationManager" */;
+			buildPhases = (
+				3F4B14A14293984842672CF062DE7B82 /* Sources */,
+				C42CDD843CD1178B3D115027EB95B712 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0494ADFD92AABC2A862A295D3A69DA14 /* PBXTargetDependency */,
+			);
+			name = "Pods-MDKLocationManager";
+			productName = "Pods-MDKLocationManager";
+			productReference = E944C36153F722CED52DF022D798A9ED /* libPods-MDKLocationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B8426E0CFB6DAB862A59B7891A42750E /* MDKTenOpenTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2EEADB3E72B69F2DD05655E83CFF112 /* Build configuration list for PBXNativeTarget "MDKTenOpenTool" */;
+			buildPhases = (
+				E74B68810D9CDE3EF91E202AF6ED8BCC /* Sources */,
+				0D819488977352B532C2624A3035B47E /* Frameworks */,
+				AB3F505C125188D13E9D30D4CFE74D5D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDKTenOpenTool;
+			productName = MDKTenOpenTool;
+			productReference = C087A81C1B48A3C6D4A715DF4B0C06CC /* libMDKTenOpenTool.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 10722DAC4679183E58540204B3533DAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8426E0CFB6DAB862A59B7891A42750E /* MDKTenOpenTool */,
+				5EFB87BF0855FFFB367BDFF5E41F54B8 /* Pods-MDKLocationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F4B14A14293984842672CF062DE7B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D772359CE6FEB3324F0B3D5B1390CF5C /* Pods-MDKLocationManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74B68810D9CDE3EF91E202AF6ED8BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F973C5FBBF09281CC81CCB4A819F82AE /* MDKTenOpenTool-dummy.m in Sources */,
+				83CDFB4FAE47B9BC10EA6126C00D1243 /* MDKTenOpenTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0494ADFD92AABC2A862A295D3A69DA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MDKTenOpenTool;
+			target = B8426E0CFB6DAB862A59B7891A42750E /* MDKTenOpenTool */;
+			targetProxy = 1556A3B33FF0C789013CA7C5625CF6DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0200B6AB60838A730DD61893831F5E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733790AA2302628C81E9FC3DF5344F9A /* MDKTenOpenTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MDKTenOpenTool/MDKTenOpenTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MDKTenOpenTool;
+				PRODUCT_NAME = MDKTenOpenTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17C15748C0E8174E7A021618E41D3270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C35D253C5057D8D49DFABB0FC6092D /* Pods-MDKLocationManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CDDEC234E070EDA2B94940BB80639AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2FBB09A88AD703BA87243E83099474 /* Pods-MDKLocationManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA65A3A748C612767A39EB466EA5BF37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733790AA2302628C81E9FC3DF5344F9A /* MDKTenOpenTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MDKTenOpenTool/MDKTenOpenTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MDKTenOpenTool;
+				PRODUCT_NAME = MDKTenOpenTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F8E555A0C22482580071FF5D8DC815 /* Build configuration list for PBXNativeTarget "Pods-MDKLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C15748C0E8174E7A021618E41D3270 /* Debug */,
+				CDDEC234E070EDA2B94940BB80639AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2EEADB3E72B69F2DD05655E83CFF112 /* Build configuration list for PBXNativeTarget "MDKTenOpenTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0200B6AB60838A730DD61893831F5E95 /* Debug */,
+				DA65A3A748C612767A39EB466EA5BF37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
