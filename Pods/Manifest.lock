@@ -1,16 +1,20 @@
 PODS:
+  - BaiduMapKit (4.0.0)
   - MDKTenOpenTool (1.0.0)
 
 DEPENDENCIES:
+  - BaiduMapKit
   - MDKTenOpenTool
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - BaiduMapKit
     - MDKTenOpenTool
 
 SPEC CHECKSUMS:
+  BaiduMapKit: 8fa2eb2ca81b92b740b19d9ff3b59d751d3e92e1
   MDKTenOpenTool: ef69033641849876f735b2edcf9b4f18752db29b
 
-PODFILE CHECKSUM: 68e3430042014eb14c8af3838e3ee11209cb69ac
+PODFILE CHECKSUM: 13fadb878a673b84d0358250883815730cf1ef9b
 
 COCOAPODS: 1.5.0

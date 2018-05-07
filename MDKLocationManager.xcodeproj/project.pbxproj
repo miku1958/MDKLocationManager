@@ -140,6 +140,7 @@
 				FFDE3A1320943F3500F21282 /* Sources */,
 				FFDE3A1420943F3500F21282 /* Frameworks */,
 				FFDE3A1520943F3500F21282 /* Resources */,
+				32E16AFDAB455FC9D26F90E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +198,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		32E16AFDAB455FC9D26F90E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MDKLocationManager/Pods-MDKLocationManager-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDKLocationManager/Pods-MDKLocationManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		92DCD4C61365B40934BD26C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

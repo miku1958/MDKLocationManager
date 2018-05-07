@@ -6,9 +6,7 @@
 //
 
 #import "MDKLocationManager.h"
-#ifdef canUseBaiduSDK
-#import <BaiduMapAPI_Utils/BMKGeometry.h>
-#endif
+
 #import "MDKTenOpenTool.h"
 
 NSString * const MDKLocationManagerNeverShowAlert = @"BCLocationManagerNeverShowAlert";

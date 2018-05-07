@@ -7,7 +7,9 @@
 //
 
 #import "MDKLocationManager+BMKConvert.h"
-
+#ifdef canUseBaiduSDK
+#import <BaiduMapAPI_Utils/BMKGeometry.h>
+#endif
 @implementation MDKLocationManager (BMKConvert)
 #ifdef canUseBaiduSDK
 	//MARK:	以下代码来自http://blog.csdn.net/jiisd/article/details/48712473
