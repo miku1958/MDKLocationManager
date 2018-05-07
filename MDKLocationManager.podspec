@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MDKLocationManager"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "a easy way location manager with block or target action mode"
 
   # This description is used to generate tags and improve search results.
@@ -90,8 +90,18 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+  s.default_subspec = 'Core'
 
-  s.source_files  = "Class/**/*.{h,m}"
+  s.subspec 'Core' do |core|
+    core.source_files = 'Class/Core/**/*.{h,m}'
+  end
+
+  s.subspec 'BMK' do |bmk|
+    bmk.source_files = 'Class/BMK/**/*.{h,m}'
+    bmk.dependency 'SDWebImage/Core'
+    bmk.dependency 'BaiduMapKit'
+  end
+
 
   # s.public_header_files = "Classes/**/*.h"
 
