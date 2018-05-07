@@ -5,8 +5,12 @@
 //  Created by mikun on 2018/5/7.
 //  Copyright © 2018年 mdk. All rights reserved.
 //
-
+#if __has_include("MDKLocationManager.h")
 #import "MDKLocationManager.h"
+#else
+#import <MDKLocationManager/MDKLocationManager.h>
+#endif
+
 
 #if __has_include(<BaiduMapAPI_Utils/BMKGeometry.h>)
 #define canUseBaiduSDK 1
