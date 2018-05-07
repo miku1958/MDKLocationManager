@@ -15,7 +15,6 @@
 		FFDE3A2420943F3500F21282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDE3A2320943F3500F21282 /* Assets.xcassets */; };
 		FFDE3A2720943F3500F21282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDE3A2520943F3500F21282 /* LaunchScreen.storyboard */; };
 		FFDE3A2A20943F3500F21282 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE3A2920943F3500F21282 /* main.m */; };
-		FFDE3A3320943F5200F21282 /* MDKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE3A3220943F5200F21282 /* MDKLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +33,6 @@
 		FFDE3A2620943F3500F21282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFDE3A2820943F3500F21282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDE3A2920943F3500F21282 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FFDE3A3120943F5200F21282 /* MDKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDKLocationManager.h; sourceTree = "<group>"; };
-		FFDE3A3220943F5200F21282 /* MDKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDKLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +62,6 @@
 				06B04F3C16032C5BB6D57B18 /* Pods-MDKLocationManager.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FF0C994220A03B4C00AC42A5 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				FFDE3A3120943F5200F21282 /* MDKLocationManager.h */,
-				FFDE3A3220943F5200F21282 /* MDKLocationManager.m */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		FF0C994320A03B5500AC42A5 /* BMK */ = {
@@ -123,7 +111,6 @@
 		FFDE3A3020943F5200F21282 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				FF0C994220A03B4C00AC42A5 /* Core */,
 				FF0C994320A03B5500AC42A5 /* BMK */,
 			);
 			path = Class;
@@ -245,7 +232,6 @@
 				FFDE3A2A20943F3500F21282 /* main.m in Sources */,
 				FFDE3A1C20943F3500F21282 /* AppDelegate.m in Sources */,
 				FF0C994120A03B0F00AC42A5 /* MDKLocationManager+BMKConvert.m in Sources */,
-				FFDE3A3320943F5200F21282 /* MDKLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

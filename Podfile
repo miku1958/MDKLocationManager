@@ -9,4 +9,5 @@ target 'MDKLocationManager' do
   pod 'MDKTenOpenTool'
 
   pod 'BaiduMapKit'
+  pod 'MDKLocationManager'
 end

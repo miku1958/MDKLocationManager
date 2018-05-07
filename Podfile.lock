@@ -1,20 +1,28 @@
 PODS:
   - BaiduMapKit (4.0.0)
+  - MDKLocationManager (1.0.2):
+    - MDKLocationManager/Core (= 1.0.2)
+    - MDKTenOpenTool
+  - MDKLocationManager/Core (1.0.2):
+    - MDKTenOpenTool
   - MDKTenOpenTool (1.0.0)
 
 DEPENDENCIES:
   - BaiduMapKit
+  - MDKLocationManager
   - MDKTenOpenTool
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - BaiduMapKit
+    - MDKLocationManager
     - MDKTenOpenTool
 
 SPEC CHECKSUMS:
   BaiduMapKit: 8fa2eb2ca81b92b740b19d9ff3b59d751d3e92e1
+  MDKLocationManager: dd5e3c983f0ed5d06505f84eacee7c4f66f0cd5e
   MDKTenOpenTool: ef69033641849876f735b2edcf9b4f18752db29b
 
-PODFILE CHECKSUM: 13fadb878a673b84d0358250883815730cf1ef9b
+PODFILE CHECKSUM: 5803a3ed7be8614d31225fe0fb4f4483c3f678fc
 
 COCOAPODS: 1.5.0
