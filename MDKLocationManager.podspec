@@ -96,11 +96,10 @@ Pod::Spec.new do |s|
     core.source_files = 'Class/Core/**/*.{h,m}'
   end
 
-  s.subspec 'BMK' do |bmk|
-    bmk.source_files = 'Class/BMK/**/*.{h,m}'
-    bmk.dependency 'SDWebImage/Core'
-    bmk.dependency 'BaiduMapKit'
-  end
+  # s.subspec 'BMK' do |bmk|
+  #   bmk.source_files = 'Class/BMK/**/*.{h,m}'
+  #   bmk.dependency 'BaiduMapKit'
+  # end
 
 
   # s.public_header_files = "Classes/**/*.h"
