@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   s.subspec 'BMK' do |bmk|
     bmk.source_files = 'Class/BMK/**/*.{h,m}'
     bmk.dependency 'BaiduMapKit'
-    bmk.dependency 'MDKLocationManager' 
+    bmk.dependency 'MDKLocationManager/Core' 
   end
 
 
